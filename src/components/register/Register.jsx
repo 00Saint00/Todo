@@ -48,17 +48,34 @@ const Register = () => {
               </div>
               <div>
                 <label>First Name</label>
-                <input type="text" placeholder="First Name" name="first_name" />
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  name="first_name"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                />
                 <p>{touched.first_name && errors.first_name}</p>
               </div>
               <div>
                 <label>Last Name</label>
-                <input type="text" placeholder="Last Name" name="last_name" />
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  name="last_name"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                />
                 <p>{touched.last_name && errors.last_name}</p>
               </div>
               <div>
                 <label>Email</label>
-                <input type="password" name="password" />
+                <input
+                  type="password"
+                  name="password"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                />
                 <p>{touched.password && errors.password}</p>
               </div>
             </form>
