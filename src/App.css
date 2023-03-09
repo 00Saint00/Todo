@@ -1,38 +1,74 @@
 .App {
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+a {
+  text-decoration: none;
+}
+
+.todo_container {
+  height: 100vh;
+  display: flex;
+  overflow-y: hidden;
+}
+
+.todoBody {
+  padding: 50px;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo-box {
+  background-color: #f8f9fa;
+  width: 100%;
+  padding: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.todo-header img {
+  width: 100px;
+  height: 100px;
+}
+
+.todo-header h1 {
+  color: #017bfe;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.input-todo {
+  background-color: white;
+  width: 70%;
+  padding: 1rem;
+  margin: 4rem auto;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.input-todo input {
+  width: 90%;
+  margin-right: 20px;
+  height: 25px;
+  border: none;
+  padding: 5px;
+}
+
+.input-todo input:focus {
+  outline: 0;
+}
+
+.input-todo button {
+  background-color: #017bfe;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: none;
+  height: 30px;
+  width: 50px;
+  border-radius: 5px;
+  cursor: pointer;
 }
