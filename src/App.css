@@ -19,6 +19,12 @@ a {
   text-align: center;
 }
 
+.tody {
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+}
+
 .todo-box {
   background-color: #f8f9fa;
   width: 100%;
@@ -71,4 +77,13 @@ a {
   width: 50px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.texts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  padding: 5px;
 }
